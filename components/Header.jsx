@@ -1,11 +1,11 @@
 function Header() {
   return (
-    <div className="bg-dark ">
+    <div className="bg-light">
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-light " >
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
-              Brand
+            Home
             </a>
             <button
               className="navbar-toggler"

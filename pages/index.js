@@ -13,32 +13,32 @@ export default function Home() {
           <div className='col-md-9 col-sm-12 col-xs-12'>
             <h6>Govt Degree College Handwara NAAC Accredited Grade B</h6>
             <hr />
-            <div class="card mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="http://gdchandwara.edu.in/images/principal4.png" class="img-fluid rounded-start" alt="..."/>
+            <div className="card mb-3">
+              <div className="row g-0">
+                <div className="col-md-4">
+                  <img src="http://gdchandwara.edu.in/images/principal4.png" className="img-fluid rounded-start" alt="..."/>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Principal's Message</h5>
-                    <p class="card-text"><i>"Education is the most powerful weapon which you can use to change the world" Nelson Mandela.</i> I welcome you all to this great institution of learning which has molded the destiny of thousands of students over the last few decades, for a better tomorrow. As we step into new academic session 2020-21, filled with hope and dreams of touching new heights.</p>
-                    <p class="card-text"><small class="text-muted"><a href="../Header/MessagePrincipal.html"> Click Here to read full message </a></small></p>
+                <div className="col-md-8">
+                  <div className="card-body">
+                    <h5 className="card-title">Principal's Message</h5>
+                    <p className="card-text"><i>"Education is the most powerful weapon which you can use to change the world" Nelson Mandela.</i> I welcome you all to this great institution of learning which has molded the destiny of thousands of students over the last few decades, for a better tomorrow. As we step into new academic session 2020-21, filled with hope and dreams of touching new heights.</p>
+                    <p className="card-text"><small className="text-muted"><a href="../Header/MessagePrincipal.html"> Click Here to read full message </a></small></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className='col-md-3 col-sm-12 col-xs-12'>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="http://gdchandwara.edu.in/images/BannerImage/bicycle1.jpeg" class="d-block w-100" alt="..." />
+            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img src="http://gdchandwara.edu.in/images/BannerImage/bicycle1.jpeg" className="d-block w-100" alt="..." />
                 </div>
-                <div class="carousel-item">
-                  <img src="http://gdchandwara.edu.in/images/BannerImage/bicycle2.jpeg" class="d-block w-100" alt="..." />
+                <div className="carousel-item">
+                  <img src="http://gdchandwara.edu.in/images/BannerImage/bicycle2.jpeg" className="d-block w-100" alt="..." />
                 </div>
-                <div class="carousel-item">
-                  <img src="http://gdchandwara.edu.in/images/BannerImage/last-date-extended.jpg" class="d-block w-100" alt="..." />
+                <div className="carousel-item">
+                  <img src="http://gdchandwara.edu.in/images/BannerImage/last-date-extended.jpg" className="d-block w-100" alt="..." />
                 </div>
               </div>
             </div>
