@@ -1,12 +1,10 @@
 function Header() {
   return (
-    <div className="bg-light">
+    <div className="">
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light " >
+        <nav className="navbar navbar-expand-lg " >
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-            Home
-            </a>
+            
             <button
               className="navbar-toggler"
               type="button"
@@ -18,7 +16,7 @@ function Header() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="main_nav">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav menu-bar">
                 <li className="nav-item active">
                   {" "}
                   <a className="nav-link" href="#">
