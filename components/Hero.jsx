@@ -1,4 +1,5 @@
 import { defaultConfig } from "next/dist/server/config-shared"
+import Image from "next/image"
 
 const Hero = () => {
     return (
@@ -6,7 +7,7 @@ const Hero = () => {
             <div className="max-w-screen-xl mx-auto md:px-8">
                 <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
                     <div className="flex-1 sm:hidden lg:block">
-                        <img src="https://gdchandwara.edu.in/images/Principal_dilruba.PNG" className="md:max-w-lg sm:rounded-lg" alt="Principal Image" />
+                        <img src="https://gdchandwara.edu.in/images/Principal_dilruba.PNG" className="md:max-w-lg sm:rounded-lg"  alt="Principal Image" />
                     </div>
                     <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
                         <h3 className="text-indigo-600 font-semibold">
@@ -14,10 +15,10 @@ const Hero = () => {
                         </h3>
                         <hr/>
                         <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        Principal's Message
+                        Principal&apos;s Message
                         </p>
                         <p className="mt-3 text-gray-600">
-                        <i>"Education is the most powerful weapon which you can use to change the world" <span className="text-blue-600">__Nelson Mandela</span></i>
+                        <i>&quot;Education is the most powerful weapon which you can use to change the world &quot; <span className="text-blue-600">__Nelson Mandela</span></i>
                         <br/>I welcome you all to this great institution of learning which has molded the destiny of thousands of students over the last few decades, for a better tomorrow. As we step into new academic session 2020-21, filled with hope and dreams of touching new heights.
                         </p>
                         <a href="javascript:void(0)" className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium">

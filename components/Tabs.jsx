@@ -3,7 +3,7 @@ import { useState } from "react";
 const Tabs = () => {
   const tabItems = [
     "General Notices",
-    "Time Table and Date Sheets",
+    "Time Table & Date Sheets",
     "Admissions",
     "Student Registration",
   ];
