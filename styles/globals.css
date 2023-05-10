@@ -1,4 +1,8 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -9,11 +13,11 @@ body {
 .gdc-header {
   background-color: #7d0202;
     /* border-top: 1px solid #ddd; */
-    color: white;
+    /* color: white; */
   
-}
+/* } */
 
-.header-logo{
+/* .header-logo{
   background-color: #7D0202;
 }
 .logo-xs {
@@ -31,9 +35,9 @@ body {
 .navbar .megamenu{ padding: 1rem; }
 
 /* ============ desktop view ============ */
- @media all and (min-width: 992px) {
+ /* @media all and (min-width: 992px) { */
 
-  .navbar .has-megamenu{position:static!important;}
+  /* .navbar .has-megamenu{position:static!important;}
   .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
 
 }	
@@ -56,17 +60,17 @@ body {
   text-decoration: underline;
   font-weight: 300;
 }
+ */
 
-
-.navbar a{
+/* .navbar a{
   color: #0f0f0f;
   font-weight: 500;
 }
 
 navbar{
   background-color:#e3f2fd;
-}
+}  */
 
 /* .menu-bar li:hover{
 color: #13348d;
-} */
+} */ 
