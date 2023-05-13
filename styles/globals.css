@@ -18,3 +18,8 @@
   padding-top: 1rem;
   line-height: 25px;
 }
+.i-map{
+border:0;
+overflow-x: hidden;
+  
+}

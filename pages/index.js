@@ -3,6 +3,8 @@ import Hero from '../components/Hero'
 import Tabs from '../components/Tabs'
 import Main from '../components/Main'
 import Slider from '../components/Slider'
+import Facilities from '../components/Facilites'
+import Contact from '../components/Contact'
 
 export default function Home() {
   return (
@@ -14,8 +16,10 @@ export default function Home() {
       </Head>
       <Slider/>
       <Hero/>
-      <Tabs/>
+     <hr/>
       <Main/>
+      <Facilities/>
+      <Contact/>
     </>
   )
 }
