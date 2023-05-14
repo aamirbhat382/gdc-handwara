@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 
-const Custom404 = () => {
+export default function custom404() {
     return (
         <main>
             <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-start h-screen md:px-8">
@@ -23,4 +23,4 @@ const Custom404 = () => {
         </main>
     )
 }
-export default  Custom404
+// export default  custom404
