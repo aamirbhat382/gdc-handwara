@@ -9,22 +9,22 @@ const dropdownNavsStudents = [
       {
         title: "VIEW MY COURSE",
         desc: "/viewmycourse",
-        path: "javascript:void(0)",
+        path: "/students/viewmycourse",
       },
       {
         title: "CERTIFICATES",
         desc: "/certificates",
-        path: "javascript:void(0)",
+        path: "/students/certificates",
       },
       {
         title: "SYLLABUS",
         desc: "syllabus",
-        path: "javascript:void(0)",
+        path: "/students/syllabus",
       },
       {
         title: "RESULTS",
         desc: "results",
-        path: "javascript:void(0)",
+        path: "/students/results",
       },
     ],
   },
@@ -34,22 +34,22 @@ const dropdownNavsStudents = [
       {
         title: "ADMISSIONS",
         desc: "",
-        path: "javascript:void(0)",
+        path: "/students/admissions",
       },
       {
         title: "SCHOLORASHIP",
         desc: "",
-        path: "javascript:void(0)",
+        path: "/students/scholraship",
       },
       {
         title: "ELIGIBILITY",
         desc: "",
-        path: "javascript:void(0)",
+        path: "eligibility",
       },
       {
         title: "ANNOUNCEMENT",
         desc: "",
-        path: "javascript:void(0)",
+        path: "/students/announcement",
       },
     ]
   },
@@ -59,22 +59,22 @@ const dropdownNavsStudents = [
       {
         title: "LIBRARY",
         desc: "",
-        path: "javascript:void(0)",
+        path: "/students/library",
       },
       {
         title: "SPORTS",
         desc: "",
-        path: "javascript:void(0)",
+        path: "/students/sports",
       },
       {
         title: "HEALTH CARE",
         desc: "",
-        path: "javascript:void(0)",
+        path: "/students/healthcare",
       },
       {
         title: "FAQ",
         desc: "",
-        path: "javascript:void(0)",
+        path: "/students/faq",
       },
     ]
   },
@@ -254,7 +254,7 @@ const Navbar = () => {
               state ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+            <ul className="items-center space-y-6 md:flex md:space-x-6 md:space-y-0 text-gray-900">
               {navigation.map((item, idx) => {
                 return (
                   <li key={idx}>
@@ -309,11 +309,11 @@ const Navbar = () => {
                     drapdownState.idx == idx &&
                     drapdownState.isActive ? (
                       <div className="mt-6 bg-white inset-x-0 top-20 w-full md:absolute md:border-y md:shadow-md md:mt-0">
-                        <ul className="max-w-screen-xl mx-auto grid  gap-2 md:p-8 md:grid-cols-2 lg:grid-cols-3">
+                        <ul className="max-w-screen-xl mx-auto grid  gap-2 md:p-8 md:grid-cols-2 lg:grid-cols-3 text-gray-900">
                           {item?.navs.map((dropdownItem, idx) => (
                             <li key={idx}>
                               <p className="text-indigo-600 text-sm">{dropdownItem.label}</p>
-                              <ul className="mt-2 space-y-2">
+                              <ul className="mt-2 space-y-2 text-gray-900">
                                 {dropdownItem.navs.map((navItem, idx) => (
                                   <li key={idx} className="group">
                                     <Link
