@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const dropdownNavsStudents = [
@@ -7,22 +8,22 @@ const dropdownNavsStudents = [
     navs: [
       {
         title: "VIEW MY COURSE",
-        desc: "",
+        desc: "/viewmycourse",
         path: "javascript:void(0)",
       },
       {
         title: "CERTIFICATES",
-        desc: "",
+        desc: "/certificates",
         path: "javascript:void(0)",
       },
       {
         title: "SYLLABUS",
-        desc: "",
+        desc: "syllabus",
         path: "javascript:void(0)",
       },
       {
         title: "RESULTS",
-        desc: "",
+        desc: "results",
         path: "javascript:void(0)",
       },
     ],
@@ -165,9 +166,9 @@ const Navbar = () => {
 
   const navigation = [
     { title: "HOME", path: "/", isDrapdown: false },
-    { title: "ABOUT US", path: "/about", isDrapdown: false },
-    { title: "EXAMINATION", path: "/examination", isDrapdown: false },
-    { title: "FACILITIES", path: "/facilities", isDrapdown: false },
+    { title: "ABOUT US", path: "/page/about", isDrapdown: false },
+    { title: "EXAMINATION", path: "/page/examination", isDrapdown: false },
+    { title: "FACILITIES", path: "/page/facilities", isDrapdown: false },
     {
       title: "STUDENTS",
       path: "#",
@@ -181,8 +182,8 @@ const Navbar = () => {
         navs: dropdownNavsAcademics,
       },
      
-    { title: "GALLERY", path: "/gallery", isDrapdown: false },
-    { title: "CONTACT US", path: "/contact", isDrapdown: false },
+    { title: "GALLERY", path: "/page/gallery", isDrapdown: false },
+    { title: "CONTACT US", path: "/page/contact", isDrapdown: false },
   ];
 
 
@@ -203,7 +204,7 @@ const Navbar = () => {
       >
         <div className="items-center gap-x-14 px-4 max-w-screen-xl mx-auto md:flex md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="javascript:void(0)">
+            <Link href="javascript:void(0)">
               <img
                 src="https://gdchandwara.edu.in/images/TopLogo.png"
                 width={60}
@@ -211,7 +212,8 @@ const Navbar = () => {
                 alt="Govt. Degree College Handwara logo"
               />
               
-            </a>
+            </Link>
+          
             <div className="md:hidden">
               <button
                 className="text-gray-500 hover:text-gray-800"
@@ -296,12 +298,12 @@ const Navbar = () => {
                         )}
                       </button>
                     ) : (
-                      <a
+                      <Link
                         href={item.path}
                         className="block text-gray-700 hover:text-indigo-600"
                       >
                         {item.title}
-                      </a>
+                      </Link>
                     )}
                     {item.isDrapdown &&
                     drapdownState.idx == idx &&
@@ -314,7 +316,7 @@ const Navbar = () => {
                               <ul className="mt-2 space-y-2">
                                 {dropdownItem.navs.map((navItem, idx) => (
                                   <li key={idx} className="group">
-                                    <a
+                                    <Link
                                       href={navItem.path}
                                       className="flex gap-3 items-center"
                                     >
@@ -325,7 +327,7 @@ const Navbar = () => {
                                         </span>
                                        
                                       </div>
-                                    </a>
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
@@ -343,17 +345,9 @@ const Navbar = () => {
                 <li>
                   <a
                     href="javascript:void(0)"
-                    className="block py-3 text-center text-gray-700 hover:text-indigo-600 border rounded-lg md:border-none"
-                  >
-                    IQAC
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:void(0)"
                     className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline"
                   >
-                    Student Login
+                    Admin Login
                   </a>
                 </li>
               </div>

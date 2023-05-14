@@ -6,10 +6,15 @@ const Slider = ()=>{
         // h-56 sm:h-64 xl:h-80 2xl:h-96
 <div className="h-56 sm:h-96 xl:96 2xl:96">
   <Carousel>
+  <img
+      src="/boys.png"
+      alt="..."
+    />
     <img
       src="https://gdchandwara.edu.in/images/BannerImage/bicycle2.jpeg"
       alt="..."
     />
+   
     <img
       src="https://gdchandwara.edu.in/images/BannerImage/r2.jpeg"
       alt="..."
