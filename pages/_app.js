@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
        
       </Head>
 
-<Uc/>
+{/* <Uc/> */}
         <Navbar/> 
       <Component {...pageProps} />
         <Footer/>

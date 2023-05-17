@@ -254,7 +254,7 @@ const Navbar = () => {
               state ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center space-y-6 md:flex md:space-x-6 md:space-y-0 text-gray-900">
+            <ul className="items-center space-y-6 md:flex md:space-x-6 md:space-y-0 text-gray-900" onClick={() => setState(!state)}>
               {navigation.map((item, idx) => {
                 return (
                   <li key={idx}>
@@ -344,7 +344,7 @@ const Navbar = () => {
               <div className="flex-1 items-center justify-end gap-x-6 space-y-3 md:flex md:space-y-0">
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="/about"
                     className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline"
                   >
                     Admin Login
