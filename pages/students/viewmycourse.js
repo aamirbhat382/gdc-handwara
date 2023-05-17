@@ -6,7 +6,7 @@ const viewmycourse = () => {
     >
       <h1 className="py-3 text-indigo-700">Course Viewer Dashboard</h1>
       <div>
-        <label for="username" className="block py-2 text-gray-500">
+        <label htmlFor="username" className="block py-2 text-gray-500">
           Form Number
         </label>
         <div className="flex items-center text-gray-400 border rounded-md">
@@ -18,7 +18,7 @@ const viewmycourse = () => {
           />
         </div>
         <h1 className="text-center py-2">OR</h1>
-        <label for="username" className="block py-2 text-gray-500">
+        <label htmlFor="username" className="block py-2 text-gray-500">
           Board Registration Number
         </label>
         <div className="flex items-center text-gray-400 border rounded-md">
